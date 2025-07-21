@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   text-align: center;
 }
 
@@ -240,6 +240,9 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@600&family=Roboto+Mono:wght@700&display=swap");
 
 @media (max-width: 600px) {
+  body {
+    padding: 24px 8px 48px 8px;
+  }
   .header {
     font-size: 1.6em;
     margin-top: 18px;
@@ -298,5 +301,8 @@ body {
   .next {
     font-size: 1.3em;
     padding: 6px;
+  }
+  .love-btn {
+    margin-bottom: 64px;
   }
 }
