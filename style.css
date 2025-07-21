@@ -197,7 +197,7 @@ body {
 
 .love-btn {
   display: block;
-  margin: 48px auto 24px auto;
+  margin: 48px auto 124px auto;
   padding: 16px 36px;
   background: linear-gradient(90deg, #ff4d6a 0%, #ff9800 100%);
   color: #fff;
@@ -240,9 +240,6 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@600&family=Roboto+Mono:wght@700&display=swap");
 
 @media (max-width: 600px) {
-  body {
-    padding: 24px 8px 48px 8px;
-  }
   .header {
     font-size: 1.6em;
     margin-top: 18px;
@@ -301,8 +298,5 @@ body {
   .next {
     font-size: 1.3em;
     padding: 6px;
-  }
-  .love-btn {
-    margin-bottom: 64px;
   }
 }
