@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeça de caixa d'agua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="spotify-hint">
+        <span class="hint-text">Antes de tudo, dê play na voz do gabiru ai!</span>
+        <span class="arrow-down">&#8595;</span>
+    </div>
+
+    <iframe style="border-radius:12px; margin-top:12px;"
+        src="https://open.spotify.com/embed/track/4uyBm26e7ElRigCH6vRbpc?utm_source=generator" width="350" height="100"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
+
+    <div class="header">
+        Jason <span class="heart">❤️</span> Flávia
+    </div>
+
+    <div class="carousel-wrapper">
+        <div class="carousel">
+            <img src="img/foto1.jpg" alt="Foto 1">
+            <img src="img/foto2.jpg" alt="Foto 2">
+            <img src="img/foto3.jpg" alt="Foto 3">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="message">
+        Cuzinho mais tarde?! 👉👌
+    </div>
+
+    <div class="countdown-area">
+        <div class="countdown">Estamos juntos há</div>
+        <div class="count-breakdown-table" id="timeTogether"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <button class="love-btn" onclick="showLoveImage()">clique aqui meu amor</button>
+    <div id="love-modal" class="love-modal" style="display:none;">
+        <img src="img/mkko.jpg" alt="Surpresa" class="love-img" />
+    </div>
+    <script>
+        function showLoveImage() {
+            const modal = document.getElementById('love-modal');
+            modal.style.display = 'flex';
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 200);
+        }
+    </script>
+</body>
+
+</html>
